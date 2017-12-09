@@ -18,6 +18,10 @@ h3{
     text-align: right !important;
 }
 
+h3{
+    font-size: 1.5em;
+}
+
 section {
     height: 100vh;
     position: relative;
@@ -73,13 +77,13 @@ section > div, header > div {
 
 /* about project */
 
-.project, .virtual {
+.project, .virtual, .author {
     margin-right: 70px;
     width: 30%;
     text-align: right;
 }
 
-.project__inner, .virtual__inner {
+.project__inner, .virtual__inner, .author__inner {
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
@@ -97,4 +101,12 @@ section > div, header > div {
 .virtual__item {
     height: 100px;
     background-color: #fff;
+}
+
+.author__text {
+    font-size: 1.2em;
+}
+
+.author__title {
+    color: #e0ad80;
 }
