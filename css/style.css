@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
     margin: 0;
     background-image: url(../img/moons-of-Mars-large.jpg);
@@ -93,6 +93,10 @@ section > div, header > div {
     padding-top: 30px;
 }
 
+.virtual__moon a {
+    color: #fff;
+}
+
 .virtual__subtitle  {
     text-align: right;
     width: 100%;
@@ -100,7 +104,43 @@ section > div, header > div {
 
 .virtual__item {
     height: 100px;
-    background-color: #fff;
+    background-position: right -30px center;
+    background-size: 250%;
+    text-align: center;
+    position: relative;
+    background-image: linear-gradient(#000, #000);
+    transition: all .5s ease-in-out;
+}
+
+.virtual__item:hover {
+    background-size: 350%;
+    background-position: center center;
+}
+
+.virtual__item > div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.niereg-deimos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/niereg_deimos.PNG);
+}
+
+.niereg-phobos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/niereg_phobos.PNG);
+}
+
+.elips {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/elips.PNG);
+}
+
+.sfera {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/sfera.PNG);
+}
+
+.wielosc {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/20_scienny.PNG); 
 }
 
 .author__text {
