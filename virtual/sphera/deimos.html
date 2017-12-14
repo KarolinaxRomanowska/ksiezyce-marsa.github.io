@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Deimos - Globus Sferyczny</title>
+    <!-- x3dom framework -->
+    <script type='text/javascript' src='../../js/x3dom.js'></script>
+    <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Roboto" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="shortcut icon" href="icon/mars-icon-24584.png" />
+    <link rel="stylesheet" href="../../css/portal.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1><a href="">Deimos</a></h1>
+        <h3>Globus Sferyczny</h3>
+        <div class="content-download">
+            <div class="item-download"> <a href="sfera_Deimos.wrl">
+               <i class="fa fa-download" aria-hidden="true">
+               </i>
+               <p>.wrl</p>
+           </a>
+            </div>
+            <div class="item-download"> <a href="sfera_Deimos.x3d">
+               <i class="fa fa-download" aria-hidden="true">
+               </i>
+               <p>.x3d</p>
+           </a>
+            </div>
+        </div>
+    </div>
+    <x3d width="100%" height="100%">
+        <scene>
+            <Transform scale='0.5 0.5 0.5'>
+                <inline url="sfera_Deimos.x3d" />
+            </Transform>
+        </scene>
+    </x3d>
+
+    <button class="button-map" id="myBtn">Mapa</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <img src="../../map/deimos4.png" border="0" ismap="ismap" usemap="#mapmap" alt="html imagemap created with QGIS">
+
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="../../js/main.js"></script>
+</body>
+</html>
