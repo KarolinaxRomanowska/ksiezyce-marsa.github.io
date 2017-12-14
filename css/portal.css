@@ -46,7 +46,7 @@ body {
     color: #fff;
 }
 
-.item-download:hover a  {
+.item-download:hover a {
     text-decoration: none;
 }
 
@@ -70,38 +70,76 @@ canvas {
     cursor: all-scroll;
 }
 
-.map {
-    width: 150px;
-    height: 150px;
-    border: 2px solid #fff;
-    position: absolute;
-    right: 30px;
-    bottom: 20px;
+.button-map {
+    width: 100px;
+    height: 100px;
     background-image: url(../map/deimos4.png);
     background-position: center;
-    background-size: 250%;
-    transition: all .2s ease-in-out;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.map h2 {
-    text-align: center;
     position: absolute;
-    width: 100%;
-    bottom: 0;
-    color: #000;
+    bottom: 20px;
+    right: 30px;
     font-family: 'Bungee', cursive;
-    opacity: 0;
-    transition: all .3s ease-in-out; 
-    z-index: 3;
+    font-size: 1.2em;
 }
 
-.map:hover {
-    width: 170px;
-    height: 170px;
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    z-index: 8;
 }
 
-.map:hover h2 {
-    opacity: 1;
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    z-index: 10;
+    width: 70%;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: #777;
+    text-decoration: none;
+    cursor: pointer;
 }
