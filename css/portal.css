@@ -60,13 +60,12 @@ body {
 }
 
 x3d {
-    max-width: 100% !important;
-    max-height: 100% !important;
+    max-width: 80% !important;
+    max-height: 80% !important;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 30px;
+    left: 40px;
     right: 0;
-    bottom: 0;
 }
 
 canvas {
