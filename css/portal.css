@@ -17,7 +17,7 @@ body {
 
 .title {
     font-family: 'Bungee', cursive;
-    position: absolute;
+    position: fixed;
     top: 30px;
     left: 50px;
 }
