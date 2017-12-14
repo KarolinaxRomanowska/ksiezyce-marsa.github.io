@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <title>Deimos - Globus Nieregularny</title>
-    <!-- reset css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <!-- x3dom framework -->
     <script type='text/javascript' src='../../js/x3dom.js'></script>
     <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'>
@@ -20,6 +18,24 @@
 </head>
 
 <body>
+   <div class="title">
+       <h1><a href="">Deimos</a></h1>
+       <h3>Globus Nieregularny</h3>
+       <div class="content-download">
+           <div class="item-download"> <a href="gomb_Deimos.wrl">
+               <i class="fa fa-download" aria-hidden="true">
+               </i>
+               <p>.wrl</p>
+           </a>
+           </div>
+           <div class="item-download"> <a href="gomb_Deimos.x3d">
+               <i class="fa fa-download" aria-hidden="true">
+               </i>
+               <p>.x3d</p>
+           </a>
+           </div>
+       </div>
+   </div>
     <x3d width="100%" height="100%">
         <scene>
             <Transform scale='0.5 0.5 0.5'>
@@ -27,6 +43,11 @@
             </Transform>
         </scene>
     </x3d>
+   
+   <div class="map"></div>
+   <div class="map-popup">
+       
+   </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

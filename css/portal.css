@@ -1,6 +1,62 @@
+html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
 body {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    position: relative;
+    background-image: url(https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2016/observableun.jpg) !important;
+    color: #fff;
+}
+
+.title {
+    font-family: 'Bungee', cursive;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+.title h1 a {
+    font-size: 1.5em;
+    color: #e0ad80;
+}
+
+.title h1 a:hover {
+    text-decoration: none;
+}
+
+.content-download > div {
+    display: inline-block;
+}
+
+.item-download {
+    padding: 10px 30px 0 0;
+}
+
+.item-download a p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+.item-download:hover a  {
+    text-decoration: none;
+}
+
+.item-download a i {
+    font-size: 30px;
+    color: #74624f
+}
+
+.item-download:hover a i {
+    font-size: 33px;
+    color: #ffffff
 }
 
 x3d {
@@ -10,4 +66,39 @@ x3d {
 
 canvas {
     background-image: url(https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2016/observableun.jpg) !important;
+    cursor: all-scroll;
+}
+
+.map {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #fff;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    background-image: url(../map/deimos4.png);
+    background-position: center;
+    background-size: 250%;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.map h2 {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: #000;
+    font-family: 'Bungee', cursive;
+    opacity: 0;
+    transition: all .3s ease-in-out; 
+}
+
+.map:hover {
+    width: 170px;
+    height: 170px;
+}
+
+.map:hover h2 {
+    opacity: 1;
 }
