@@ -153,6 +153,21 @@ section > div, header > div {
    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/20_scienny.PNG); 
 }
 
+.visualisation__item {
+    overflow: hidden;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.visualisation__item:hover {
+    width: 100%;
+    transform: scale(1.1);
+}
+
+.visualisation__item img {
+    width: 100%;
+}
+
 .author__text {
     font-size: 1.2em;
 }
