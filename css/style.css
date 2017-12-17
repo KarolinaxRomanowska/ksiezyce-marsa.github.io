@@ -124,6 +124,7 @@ section > div, header > div {
 .virtual__item > div {
     position: absolute;
     top: 50%;
+    left: 10px;
     transform: translateY(-50%);
 }
 
