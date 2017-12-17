@@ -75,19 +75,24 @@ section > div, header > div {
     right: 70px;
 }
 
+.header__inner a {
+   color: #fff;
+    font-style: italic;
+}
+
 .header__title {
     font-size: 4em;
 }
 
 /* about project */
 
-.project, .virtual, .author {
+.project, .virtual, .visualisation, .author {
     margin-right: 70px;
     width: 30%;
     text-align: right;
 }
 
-.project__inner, .virtual__inner, .author__inner {
+.project__inner, .virtual__inner, .visualisation__inner, .author__inner {
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
